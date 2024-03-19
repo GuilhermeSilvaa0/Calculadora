@@ -64,6 +64,54 @@
         #txtimpar{
             width: 15vw;
         }
+
+        @media (max-width: 430px){
+            body{
+                margin: 0;
+                font-size: 6vw;
+            }
+
+            #seção{
+                background-color: greenyellow;
+                text-align: center;
+                border: none;
+                border-radius: 0px;
+                height: 250vw;
+            }
+
+            .txtNumero{
+                border: solid 2px rgb(58, 56, 56);
+                border-radius: 10px;
+                margin: 1vw;
+                width: 20vw;
+                height: 10vw;
+                text-align: center;
+                font-size: 5vw;
+            }
+
+            #sectionn{
+                margin-top: 20%;
+                margin-bottom: 20%;
+            }
+
+            .btnstyle{
+                width: 20vw;
+                height: 20vw;
+                font-size: 15vw;
+            }
+
+            #divresul{
+                display: flex ;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #txtresul, #txtimpar{
+                width: 40vw;
+                font-size: 10vw;
+            }
+        }
     </style>
 
 </head>
@@ -80,7 +128,7 @@
             <input type="button" id="btnsoma" class="btnstyle" value="+" onclick="Calcularr('+')" >
             <input type="button" id="btnsub" class="btnstyle" value="-" onclick="Calcularr('-')">
             <input type="button" id="btndiv" class="btnstyle" value="/" onclick="Calcularr('/')">
-            <input type="button" id="btnmult" class="btnstyle" value="X" onclick="Calcularr('x')">
+            <input type="button" id="btnmult" class="btnstyle" value="x" onclick="Calcularr('x')">
             <input type="reset" id="clear" class="btnstyle" value="C" onclick="Limpar()"> <hr>
 
             <label>The result is: </label>
